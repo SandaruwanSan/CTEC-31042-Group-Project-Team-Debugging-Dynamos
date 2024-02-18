@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship List</title>
+</head>
+<body>
+    <h1>Internship List</h1>
+    <ul>
+        {% for internship in internships %}
+        <li>{{ internship.company }} - {{ internship.position }} ({{ internship.duration }})</li>
+        {% endfor %}
+    </ul>
+    <a href="/add_internship">Add Internship</a>
+</body>
+</html>
