@@ -1,0 +1,70 @@
+{% extends "base.html" %} 
+{% block title %}Company Registration{% endblock %} 
+{% block content %}
+<form method="POST">
+  <h3 align="center">Company Registration</h3>
+  <div class="form-group">
+    <label for="companyName">Company Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="companyName"
+      name="companyName"
+      placeholder="Enter company name"
+    />
+  </div>
+  <div class="form-group">
+    <label for="companyOwner">Company Owner</label>
+    <input
+      type="text"
+      class="form-control"
+      id="companyOwner"
+      name="companyOwner"
+      placeholder="Enter company owner"
+    />
+  </div>
+  <div class="form-group">
+    <label for="mailingAddress">Mailing Address</label>
+    <input
+      type="text"
+      class="form-control"
+      id="mailingAddress"
+      name="mailingAddress"
+      placeholder="Enter mailing address"
+    />
+  </div>
+  <div class="form-group">
+    <label for="officialEmail">Official Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="officialEmail"
+      name="officialEmail"
+      placeholder="Enter official email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="officialPhoneNumber">Official Phone Number</label>
+    <input
+      type="tel"
+      class="form-control"
+      id="officialPhoneNumber"
+      name="officialPhoneNumber"
+      placeholder="Enter official phone number" minlength="10"
+    />
+  </div>
+  <div class="form-group">
+    <label for="industryType">Industry Type</label>
+    <select class="form-control" id="industryType" name="industryType">
+      <option value="IT">Information Technology</option>
+      <option value="Finance">Finance</option>
+      <option value="Healthcare">Healthcare</option>
+      <option value="Manufacturing">Manufacturing</option>
+      <option value="Other">Other</option>
+      <!-- Add more options as needed -->
+    </select>
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
