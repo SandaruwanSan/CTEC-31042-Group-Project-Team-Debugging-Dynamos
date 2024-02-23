@@ -1,4 +1,4 @@
-from .models import User, Company
+from .models import Company
 from . import db
 
 @auth.route('/companyReg', methods=['GET', 'POST'])
