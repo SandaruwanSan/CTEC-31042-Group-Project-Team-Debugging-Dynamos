@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 0px; /* Adjust based on the height of the navbar */
+            font-family: Arial, sans-serif;
+        }
+        header {
+            
+            color: #fff;
+            padding: 0px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .jumbotron {
+            background-color: #f8f9fa;
+            padding: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .btn-login {
+            background-color: rgb(35, 168, 95);
+            color: white;
+        }
+        .btn-signup {
+            background-color: rgb(49, 168, 223);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <i><b><a class="navbar-brand" href="#">University Internship Provider</a></b></i>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">Welcome to Sri Lankan Internship Portal</h1>
+                <p class="lead">We Provide best internships for the university undergradutes that are available around the industry here in Sri Lanka</p>
+                <hr class="my-4">
+                <p>More About Us...</p>
+                <a class="btn btn-primary btn-lb" href="#" role="button">Learn more</a>
+                <br><br><br>
+                <a class="btn btn-signup btn-lg" href="{{ url_for('register') }}" role="button">SignUp</a>
+                <a class="btn btn-login btn-lg" href="{{ url_for('login') }}" role="button">Login</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            &copy; 2024 University Internship Provider. All Rights Reserved.<br>[A Project of Debugging Dynamos]
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
