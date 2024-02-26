@@ -14,7 +14,7 @@ from flask import send_from_directory
 from flask import current_app
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'SANRIDER-Debudding_Dynamose'  # Change this to a random value
+app.config['SECRET_KEY'] = 'SANRIDER-Debudding_Dynamose'  
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///internship.db'
 app.config['UPLOAD_FOLDER'] = 'uploads'
 db = SQLAlchemy(app)
@@ -105,7 +105,7 @@ def admin_login():
     return render_template('admin_login.html', form=form)
 
 
-
+# CT/2019/030
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
@@ -134,6 +134,7 @@ def logout():
     logout_user()
     return redirect(url_for('register'))
 
+# CT/2019/030
 @app.route('/internships')
 @login_required
 def internships():
